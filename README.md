@@ -1,6 +1,6 @@
-# entando-k8s-dbjob
+# villanova-k8s-dbjob
 
-Entando K8S Database Job
+Villanova K8S Database Job
 
 ## Brief
 
@@ -11,7 +11,7 @@ This is a very simplistic little Java program that can create a schema/user pair
 1. DATABASE_SERVER_HOST is the ip address or hostname of the database server
 2. DATABASE_SERVER_PORT
 3. DATABASE_VENDOR: one of 'mysql', 'postgresql', 'oracle'
-4. DATABASE_NAME: the name of the database set aside for Entando
+4. DATABASE_NAME: the name of the database set aside for Villanova
 5. DATABASE_ADMIN_USER is a user on the specified database that has the necessary privileges to add schemas and other users, and set their priviliges
   (Please create a user. Don't use 'postgres' or 'sys' or any of the built-in users. These lead to complications that are not supported)
 6. DATABASE_ADMIN_PASSWORD: the password of the above-mentioned user

@@ -3,22 +3,22 @@
         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.entando</groupId>
-        <artifactId>entando-quarkus-parent</artifactId>
+        <groupId>ai.villanova</groupId>
+        <artifactId>villanova-quarkus-parent</artifactId>
         <version>7.3.0</version>
         <relativePath/>
     </parent>
-    <artifactId>entando-k8s-dbjob</artifactId>
+    <artifactId>villanova-k8s-dbjob</artifactId>
     <version>7.3.0</version>
-    <name>Entando K8S Database Job</name>
-    <description>Entando's K8S Database Job</description>
-    <url>https://central.entando.com</url>
+    <name>Villanova K8S Database Job</name>
+    <description>Villanova's K8S Database Job</description>
+    <url>https://central.villanova.ai</url>
     <inceptionYear>2019</inceptionYear>
 
     <!-- LICENSE AND INFO -->
     <organization>
-        <name>Entando Inc.</name>
-        <url>http://www.entando.com/</url>
+        <name>Villanova Spa</name>
+        <url>http://www.villanova.ai/</url>
     </organization>
 
     <licenses>
@@ -45,10 +45,10 @@
     <properties>
         <preDeploymentTestGroups>integration</preDeploymentTestGroups>
         <postDeploymentTestGroups>end-to-end</postDeploymentTestGroups>
-        <github.organization>entando-k8s</github.organization>
+        <github.organization>Villanova-AI</github.organization>
         <sonar.junit.reportPaths>target/surefire-reports</sonar.junit.reportPaths>
         <sonar.projectKey>${github.organization}_${project.artifactId}</sonar.projectKey>
-        <entando-k8s-operator-common.version>7.3.0</entando-k8s-operator-common.version>
+        <villanova-k8s-operator-common.version>7.3.0</villanova-k8s-operator-common.version>
     </properties>
 
     <!-- DEPENDENCIES -->
@@ -89,14 +89,14 @@
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>entando-k8s-operator-common</artifactId>
-            <version>${entando-k8s-operator-common.version}</version>
+            <artifactId>villanova-k8s-operator-common</artifactId>
+            <version>${villanova-k8s-operator-common.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>entando-k8s-operator-common</artifactId>
-            <version>${entando-k8s-operator-common.version}</version>
+            <artifactId>villanova-k8s-operator-common</artifactId>
+            <version>${villanova-k8s-operator-common.version}</version>
             <type>test-jar</type>
             <classifier>tests</classifier>
             <scope>test</scope>

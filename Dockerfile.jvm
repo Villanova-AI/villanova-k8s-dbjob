@@ -1,7 +1,7 @@
-FROM entando/entando-java-base:11.0.3
+FROM villanova/villanova-java-base:11.0.3
 ARG VERSION
-LABEL name="Entando K8S DB Job" \
-      vendor="Entando" \
+LABEL name="Villanova K8S DB Job" \
+      vendor="Villanova" \
       version="v${VERSION}" \
       release="7.2" \
       summary="This container creates database schemas and matching users." \

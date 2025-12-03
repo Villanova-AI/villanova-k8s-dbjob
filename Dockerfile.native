@@ -1,7 +1,7 @@
 FROM registry.access.redhat.com/ubi8/ubi-minimal
 ARG VERSION
-LABEL name="Entando K8S DB Job" \
-      vendor="Entando" \
+LABEL name="Villanova K8S DB Job" \
+      vendor="Villanova" \
       version="v${VERSION}" \
       release="7.0" \
       summary="This container creates database schemas and matching users." \
